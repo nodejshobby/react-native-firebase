@@ -2,7 +2,7 @@ import { Text, TextInput, KeyboardAvoidingView, TouchableOpacity} from 'react-na
 import React, {useState} from 'react'
 import GlobalStyle from '../utils/Style'
 import { useNavigation } from '@react-navigation/native';
-import firebase  from '../../firebase'
+import { firebase }  from '../../config'
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -21,9 +21,9 @@ const Login = () => {
  
   return (
     <KeyboardAvoidingView className="flex-1 items-center justify-center">
-      <Text style={GlobalStyle.formHeader}>Sign In</Text>
-      <TextInput style={GlobalStyle.input} value={email} onChangeText={(value) => setEmail(value)} placeholder="Enter your email" autoCapitalize={none} autoCorrect={false}></TextInput>
-      <TextInput style={GlobalStyle.input} value={password} onChangeText={(value)=> setPassword(value)} placeholder="Enter your password" autoCapitalize={none} autoCorrect={false} secureTextEntry={true}></TextInput>
+      <Text style={GlobalStyle.formHeader}>Login Now</Text>
+      <TextInput style={GlobalStyle.input} value={email} onChangeText={(value) => setEmail(value)} placeholder="Enter your email" autoCapitalize="none" autoCorrect={false}></TextInput>
+      <TextInput style={GlobalStyle.input} value={password} onChangeText={(value)=> setPassword(value)} placeholder="Enter your password" autoCapitalize="none" autoCorrect={false} secureTextEntry={true}></TextInput>
       <TouchableOpacity style={GlobalStyle.primaryButton} onPress={handleLogin}>
         <Text style={GlobalStyle.primaryButtonText}>Sign In</Text>
       </TouchableOpacity>

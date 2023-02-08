@@ -10,11 +10,10 @@ const styles = StyleSheet.create({
     input: {
         backgroundColor: 'white',
         borderColor: 'gray',
-        borderWidth: 1,
-        borderRadius: 8,
+        borderRadius: 10,
         width: '80%',
         padding: 10,
-        marginBottom: 10
+        marginBottom: 10,
     },
     primaryButton: {
         backgroundColor: '#0782F9',

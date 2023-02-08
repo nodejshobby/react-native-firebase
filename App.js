@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from './src/screens/Login';
 import Register from './src/screens/Register';
 import Home from './src/screens/Home';
-import firebase  from './firebase';
+import { firebase }  from './config';
 
 const Stack = createNativeStackNavigator();
 
